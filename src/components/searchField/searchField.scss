@@ -1,0 +1,53 @@
+@import "../../styles/variables";
+@mixin setIcon {
+  position: absolute;
+  top: 0.5rem;
+  font-size: 1em;
+  color: $darkColor;
+}
+
+form {
+  margin-left: 1rem;
+  .input-container {
+    position: relative;
+    .search {
+      width: 200px;
+      height: $headerControlsHeight;
+      padding: 0 2rem;
+      border-radius: $smallBorderRaduis;
+      border: none;
+      background-color: $lightBaseColor;
+      outline: none;
+      transition: 0.3s;
+      cursor: pointer;
+      &:hover {
+        box-shadow: 0 0 0 1px $darkColor;
+      }
+      &:focus {
+        background-color: white;
+        width: 400px;
+        + .crossIcon {
+          opacity: 1;
+        }
+      }
+    }
+    .searchIcon {
+      @include setIcon;
+      left: 0.5rem;
+    }
+    .crossIcon {
+      transition: 0.3s ease-out;
+      cursor: pointer;
+      border-radius: 3px;
+      opacity: 0;
+      @include setIcon;
+      right: 0.5rem;
+      &:hover {
+        background-color: $baseColor;
+      }
+      &::before {
+        padding: 3px 3px 3px 3px;
+      }
+    }
+  }
+}

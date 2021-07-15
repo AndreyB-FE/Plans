@@ -1,0 +1,18 @@
+.addToDo {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.addToDo .plusIcon {
+  width: 2rem;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: #424242;
+}
+
+.addToDo:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}

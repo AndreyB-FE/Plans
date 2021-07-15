@@ -1,0 +1,48 @@
+.asideMenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 328px;
+  height: 100vh;
+  padding-top: 5rem;
+  background-color: #c8d4fd;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.asideMenu nav ul {
+  margin-left: 3rem;
+}
+
+.asideMenu nav ul li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px 0 0 8px;
+  transition: 0.1s;
+}
+
+.asideMenu nav ul li i {
+  color: #424242;
+  margin-right: 1rem;
+}
+
+.asideMenu nav ul li a {
+  text-decoration: none;
+  color: #424242;
+  font-size: 1.3em;
+}
+
+.asideMenu nav ul li:last-of-type {
+  margin: 0;
+}
+
+.asideMenu nav ul li:hover {
+  background-color: white;
+}
+
+.hide {
+  left: -328px;
+}

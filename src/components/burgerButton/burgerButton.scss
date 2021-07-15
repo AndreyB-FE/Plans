@@ -1,0 +1,43 @@
+@import "../../styles/variables";
+
+.menu {
+  width: 2rem;
+  height: $headerControlsHeight;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  border-radius: 3px;
+  overflow: hidden;
+  span {
+    position: absolute;
+    top: 0.85rem;
+    left: 0.2rem;
+    width: 1.6rem;
+    height: 5px;
+    background-color: $darkColor;
+    border-radius: $smallBorderRaduis;
+    transition: 0.3s;
+    &:first-of-type {
+      box-shadow: 0 0.6rem 0 0 $darkColor;
+    }
+    &:last-of-type {
+      box-shadow: 0 -0.6rem 0 0 $darkColor;
+    }
+  }
+  &:hover {
+    background-color: $halfWhiteColor;
+  }
+}
+.cross {
+  span {
+    background-color: $secondaryColor;
+    &:first-of-type {
+      transform: rotateZ(45deg);
+      box-shadow: 0 1.5rem 0 0;
+    }
+    &:last-of-type {
+      transform: rotateZ(135deg);
+      box-shadow: 0 -1.5rem 0 0;
+    }
+  }
+}

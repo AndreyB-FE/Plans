@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+
+.notifications {
+  position: relative;
+  width: 2rem;
+  height: $headerControlsHeight;
+  margin-left: 1rem;
+  border-radius: 3px;
+  &:hover {
+    background-color: $halfWhiteColor;
+  }
+  .bellIcon {
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    cursor: pointer;
+    color: $darkColor;
+  }
+  .indicator {
+    display: none;
+    position: absolute;
+    top: 7px;
+    right: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $secondaryColor;
+    box-shadow: 0 0 0 2px $darkColor;
+  }
+  .visible {
+    display: block;
+  }
+}
