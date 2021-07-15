@@ -1,9 +1,10 @@
-const burgerButtonReducer = (state = false, action) => {
+const burgerButtonReducer = (state = true, action) => {
   switch (action.type) {
-    case "TOGGLE_BUTTON":
+    case "TOGGLE_BURGER_BTN":
       return !state;
     default:
-      return false;
+      if (state) return true;
+      else return false;
   }
 };
 
