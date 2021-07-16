@@ -8,6 +8,7 @@ const newToDoField = () => {
   const [isImportant, setIsImportant] = useState(false);
   const [reminder, setReminder] = useState(false);
   const buttonToggle = useSelector((state) => state.newToDoReducer);
+
   const dayOptions = ["Today", "Tomorrow", "This Weekend", "Next week"];
 
   return (
