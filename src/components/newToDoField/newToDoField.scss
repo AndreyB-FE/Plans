@@ -1,0 +1,100 @@
+@import "../../styles/variables";
+
+.newToDoField {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 3rem;
+  right: 10rem;
+  width: 30%;
+  height: 10rem;
+  min-width: 400px;
+  padding: 0.5rem;
+  background-color: $lightBaseColor;
+  border-radius: 10px;
+  transition: 0.5s ease-out;
+  .text-notification {
+    position: relative;
+    .newToDo {
+      width: 100%;
+      height: 6rem;
+      padding: 5px;
+      border: none;
+      outline: none;
+      resize: none;
+      border-radius: $smallBorderRaduis;
+      transition: 0.3s;
+      cursor: pointer;
+      &:hover {
+        box-shadow: 0 0 0 1px $darkColor;
+      }
+    }
+    .notifications-flags {
+      position: absolute;
+      bottom: 0.5rem;
+      right: 1rem;
+      .flag {
+        width: 20px;
+        color: $darkColor;
+        cursor: pointer;
+      }
+      .reminder {
+        margin-left: 0.5rem;
+        text-align: center;
+      }
+      .active {
+        color: $secondaryColor;
+      }
+    }
+  }
+  .lower-controllers {
+    display: flex;
+    #submit {
+      @include button;
+      background-color: $lightSecondaryColor;
+      &:hover {
+        box-shadow: 0 0 3px 2px $baseColor;
+        background-color: $secondaryColor;
+      }
+    }
+    .selections {
+      position: relative;
+      .current-day {
+        @include button;
+        font-size: 0.8em;
+        margin-left: 2rem;
+        &:hover {
+          box-shadow: 0 0 3px 2px $baseColor;
+          background-color: white;
+        }
+      }
+      .dropdown-options {
+        position: absolute;
+        top: 2rem;
+        left: 33px;
+        width: 200px;
+        padding: 0.25rem;
+        background-color: #fff;
+        border: 1px solid black;
+        border-radius: $smallBorderRaduis;
+        .option {
+          padding: 5px;
+          border-radius: inherit;
+          transition: 0.1s;
+          cursor: pointer;
+          &:hover {
+            background-color: $lightBaseColor;
+          }
+        }
+      }
+      .hide {
+        display: none;
+      }
+    }
+  }
+}
+.hide {
+  top: -10rem;
+  opacity: 0;
+}
