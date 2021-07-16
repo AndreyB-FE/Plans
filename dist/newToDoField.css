@@ -1,0 +1,126 @@
+.newToDoField {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 3rem;
+  right: 10rem;
+  width: 30%;
+  height: 10rem;
+  min-width: 400px;
+  padding: 0.5rem;
+  background-color: #c8d4fd;
+  border-radius: 10px;
+  transition: 0.5s ease-out;
+}
+
+.newToDoField .text-notification {
+  position: relative;
+}
+
+.newToDoField .text-notification .newToDo {
+  width: 100%;
+  height: 6rem;
+  padding: 5px;
+  border: none;
+  outline: none;
+  resize: none;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.newToDoField .text-notification .newToDo:hover {
+  box-shadow: 0 0 0 1px #424242;
+}
+
+.newToDoField .text-notification .notifications-flags {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 1rem;
+}
+
+.newToDoField .text-notification .notifications-flags .flag {
+  width: 20px;
+  color: #424242;
+  cursor: pointer;
+}
+
+.newToDoField .text-notification .notifications-flags .reminder {
+  margin-left: 0.5rem;
+  text-align: center;
+}
+
+.newToDoField .text-notification .notifications-flags .active {
+  color: #e78300;
+}
+
+.newToDoField .lower-controllers {
+  display: flex;
+}
+
+.newToDoField .lower-controllers #submit {
+  width: 6rem;
+  height: 1.5rem;
+  border: 1px solid #424242;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: #ffc77d;
+}
+
+.newToDoField .lower-controllers #submit:hover {
+  box-shadow: 0 0 3px 2px #9bb6ff;
+  background-color: #e78300;
+}
+
+.newToDoField .lower-controllers .selections {
+  position: relative;
+}
+
+.newToDoField .lower-controllers .selections .current-day {
+  width: 6rem;
+  height: 1.5rem;
+  border: 1px solid #424242;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 0.8em;
+  margin-left: 2rem;
+}
+
+.newToDoField .lower-controllers .selections .current-day:hover {
+  box-shadow: 0 0 3px 2px #9bb6ff;
+  background-color: white;
+}
+
+.newToDoField .lower-controllers .selections .dropdown-options {
+  position: absolute;
+  top: 2rem;
+  left: 33px;
+  width: 200px;
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.newToDoField .lower-controllers .selections .dropdown-options .option {
+  padding: 5px;
+  border-radius: inherit;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.newToDoField .lower-controllers .selections .dropdown-options .option:hover {
+  background-color: #c8d4fd;
+}
+
+.newToDoField .lower-controllers .selections .hide {
+  display: none;
+}
+
+.hide {
+  top: -10rem;
+  opacity: 0;
+}
