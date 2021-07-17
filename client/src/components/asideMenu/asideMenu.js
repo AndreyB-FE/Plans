@@ -10,7 +10,9 @@ const asideMenu = () => {
   ];
   const buttonToggle = useSelector((state) => state.burgerButtonReducer);
   return (
-    <aside className={buttonToggle ? "asideMenu" : "asideMenu hideAside"}>
+    <aside
+      className={`asideMenu ${buttonToggle ? null : "asideMenu hideAside"}`}
+    >
       <div className="upper-links">
         <nav>
           <ul>

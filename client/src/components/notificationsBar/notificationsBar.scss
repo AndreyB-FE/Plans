@@ -1,0 +1,10 @@
+@import "../../styles/variables";
+
+.notificationsBar {
+  @include headerPopUps;
+}
+
+.hide {
+  top: -10rem;
+  opacity: 0;
+}

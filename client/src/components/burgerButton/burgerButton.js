@@ -9,7 +9,7 @@ const burgerButton = () => {
   return (
     <div
       id="burgerButton"
-      className={buttonClick ? "menu cross" : "menu"}
+      className={`menu ${buttonClick ? "cross" : null}`}
       onClick={() => {
         dispatch(toggleBurgerBtn());
       }}

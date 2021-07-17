@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { toggleNotificationsBtn } from "../../actions";
-import "./notifications.scss";
+import "./notificationsButton.scss";
 
-const notofications = () => {
+const notificationsButton = () => {
   const dispatch = useDispatch();
   const [notifications, setNotification] = useState(0);
   return (
@@ -13,10 +13,12 @@ const notofications = () => {
         dispatch(toggleNotificationsBtn());
       }}
     >
-      <div className={notifications ? "indicator visible" : "indicator"}></div>
+      <div
+        className={`indicator ${notifications ? "indicator visible" : null}`}
+      ></div>
       <i className="far fa-bell bellIcon"></i>
     </div>
   );
 };
 
-export default notofications;
+export default notificationsButton;
