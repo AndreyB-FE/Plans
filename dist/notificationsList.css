@@ -1,6 +1,8 @@
 .notificationsList {
   overflow: scroll;
   overflow-x: hidden;
+  border-radius: 5px;
+  height: 100%;
 }
 
 .notificationsList::-webkit-scrollbar {
@@ -17,4 +19,19 @@
   background-color: #e78300;
   min-height: 40px;
   border-radius: 3px;
+}
+
+.notificationsList .no-notifications {
+  display: flex;
+  justify-content: center;
+  height: inherit;
+  align-items: center;
+  font-size: 1.2em;
+  color: #424242;
+  background-color: #fff;
+}
+
+.notificationsList .announce {
+  text-align: center;
+  margin-bottom: 0.5rem;
 }

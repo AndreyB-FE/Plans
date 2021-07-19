@@ -22,9 +22,21 @@ export const toggleNotificationsBtn = () => {
   };
 };
 
-export const setNumNotifications = (num) => {
+export const setAllNotifications = (num) => {
   return {
-    type: "SET_NUM_NOTIFICATIONS",
+    type: "SET_NOTIFICATIONS",
     payload: num,
+  };
+};
+
+export const deleteNotification = () => {
+  return {
+    type: "DELETE_NOTIFICATION",
+  };
+};
+
+export const deleteAllNotifications = () => {
+  return {
+    type: "DELETE_ALL_NOTIFICATIONS",
   };
 };

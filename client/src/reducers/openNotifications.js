@@ -3,7 +3,7 @@ const openNotificationsReducer = (state = false, action) => {
     case "TOGGLE_NOTIFICATIONS_BTN":
       return !state;
     default:
-      return false;
+      return state;
   }
 };
 

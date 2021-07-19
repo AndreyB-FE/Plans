@@ -5,9 +5,7 @@ import "./notificationsButton.scss";
 
 const notificationsButton = () => {
   const dispatch = useDispatch();
-  const notifications = useSelector(
-    (state) => state.setNumNotificationsReducer
-  );
+  const notifications = useSelector((state) => state.setNotificationsReducer);
   return (
     <div
       className="notifications"

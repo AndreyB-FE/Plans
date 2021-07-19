@@ -2,7 +2,7 @@ import burgerButtonReducer from "./burgerToggle";
 import newToDoReducer from "./newToDo";
 import openCalendarReducer from "./openCalendar";
 import openNotificationsReducer from "./openNotifications";
-import setNumNotificationsReducer from "./setNumNotifications";
+import setNotificationsReducer from "./setNotifications";
 
 import { combineReducers } from "redux";
 
@@ -11,7 +11,7 @@ const setAllReducers = combineReducers({
   newToDoReducer,
   openCalendarReducer,
   openNotificationsReducer,
-  setNumNotificationsReducer,
+  setNotificationsReducer,
 });
 
 export default setAllReducers;
