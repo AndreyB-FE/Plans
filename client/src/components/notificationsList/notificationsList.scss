@@ -1,1 +1,21 @@
 @import "../../styles/variables";
+
+.notificationsList {
+  &::-webkit-scrollbar {
+    position: absolute;
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $darkColor;
+    border-radius: 100px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $secondaryColor;
+    min-height: 40px;
+    border-radius: 3px;
+  }
+  overflow: scroll;
+  overflow-x: hidden;
+}

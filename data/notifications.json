@@ -1,1 +1,5 @@
-{ "title": "hello", "body": "your first response" }
+[
+  { "id": 1, "title": "first", "body": "something is written right here" },
+  { "id": 2, "title": "second", "body": "something is written right here" },
+  { "id": 3, "title": "third", "body": "something is written right here" }
+]

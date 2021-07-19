@@ -21,3 +21,10 @@ export const toggleNotificationsBtn = () => {
     type: "TOGGLE_NOTIFICATIONS_BTN",
   };
 };
+
+export const setNumNotifications = (num) => {
+  return {
+    type: "SET_NUM_NOTIFICATIONS",
+    payload: num,
+  };
+};

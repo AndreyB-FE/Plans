@@ -1,0 +1,23 @@
+.notificationsBar {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 3rem;
+  right: 10rem;
+  width: 30%;
+  height: 10rem;
+  min-width: 400px;
+  padding: 0.5rem;
+  background-color: #c8d4fd;
+  border-radius: 10px;
+  transition: 0.5s ease-out;
+  justify-content: center;
+  height: auto;
+  max-height: 10rem;
+}
+
+.hide {
+  top: -10rem;
+  opacity: 0;
+}

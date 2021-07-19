@@ -2,6 +2,9 @@
 
 .notificationsBar {
   @include headerPopUps;
+  justify-content: center;
+  height: auto;
+  max-height: 10rem;
 }
 
 .hide {

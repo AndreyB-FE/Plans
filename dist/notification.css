@@ -1,0 +1,40 @@
+.notification {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0.5rem 3rem 0.5rem 0.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.notification .title {
+  font-weight: bold;
+}
+
+.notification .body {
+  font-size: 0.8em;
+  color: #424242;
+}
+
+.notification .remove {
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  position: absolute;
+  right: 0.4rem;
+  bottom: 0.4rem;
+  cursor: pointer;
+  color: #424242;
+  transition: 0.1s;
+  border-radius: 5px;
+}
+
+.notification .remove:hover {
+  color: white;
+  background-color: #707070;
+}
+
+.notification:last-of-type {
+  margin: 0;
+}

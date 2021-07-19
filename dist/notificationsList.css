@@ -1,0 +1,20 @@
+.notificationsList {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.notificationsList::-webkit-scrollbar {
+  position: absolute;
+  width: 6px;
+}
+
+.notificationsList::-webkit-scrollbar-track {
+  background-color: #424242;
+  border-radius: 100px;
+}
+
+.notificationsList::-webkit-scrollbar-thumb {
+  background-color: #e78300;
+  min-height: 40px;
+  border-radius: 3px;
+}
