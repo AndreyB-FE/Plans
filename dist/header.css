@@ -34,3 +34,12 @@ header .right-controls {
   display: flex;
   align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0 0.5rem;
+  }
+  header .left-controls .homeIcon {
+    margin-left: 0.5rem;
+  }
+}

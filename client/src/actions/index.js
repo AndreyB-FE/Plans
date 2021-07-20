@@ -40,3 +40,9 @@ export const deleteAllNotifications = () => {
     type: "DELETE_ALL_NOTIFICATIONS",
   };
 };
+
+export const openHeaderControls = () => {
+  return {
+    type: "OPEN_HEADER_CONTROLS",
+  };
+};

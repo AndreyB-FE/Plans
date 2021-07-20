@@ -7,7 +7,7 @@
 }
 
 form {
-  margin-left: 1rem;
+  margin-left: 0.5rem;
   .input-container {
     position: relative;
     .search {
@@ -25,7 +25,6 @@ form {
       }
       &:focus {
         background-color: white;
-        width: 400px;
         + .crossIcon {
           opacity: 1;
         }
@@ -47,6 +46,19 @@ form {
       }
       &::before {
         padding: 3px 3px 3px 3px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  form {
+    margin-left: 1rem;
+    .input-container {
+      .search {
+        &:focus {
+          width: 400px;
+        }
       }
     }
   }

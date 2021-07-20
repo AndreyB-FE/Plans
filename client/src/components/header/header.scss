@@ -17,7 +17,7 @@ header {
       height: $headerControlsHeight;
       text-align: center;
       font-size: 1.5rem;
-      line-height: 2rem;
+      line-height: $headerControlsHeight;
       border-radius: 3px;
       cursor: pointer;
       margin-left: 1rem;
@@ -30,5 +30,16 @@ header {
   .right-controls {
     display: flex;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0 0.5rem;
+    .left-controls {
+      .homeIcon {
+        margin-left: 0.5rem;
+      }
+    }
   }
 }

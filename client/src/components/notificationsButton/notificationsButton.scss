@@ -4,7 +4,8 @@
   position: relative;
   width: 2rem;
   height: $headerControlsHeight;
-  margin-left: 1rem;
+  margin-top: 0.5rem;
+
   border-radius: 3px;
   &:hover {
     background-color: $halfWhiteColor;
@@ -31,5 +32,12 @@
   }
   .visible {
     display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .notifications {
+    margin-top: 0;
+    margin-left: 1rem;
   }
 }
