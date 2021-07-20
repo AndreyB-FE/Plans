@@ -1,5 +1,5 @@
 form {
-  margin-left: 0.5rem;
+  margin-left: 1rem;
 }
 
 form .input-container {
@@ -24,6 +24,7 @@ form .input-container .search:hover {
 
 form .input-container .search:focus {
   background-color: white;
+  width: 400px;
 }
 
 form .input-container .search:focus + .crossIcon {
@@ -56,13 +57,4 @@ form .input-container .crossIcon:hover {
 
 form .input-container .crossIcon::before {
   padding: 3px 3px 3px 3px;
-}
-
-@media screen and (min-width: 768px) {
-  form {
-    margin-left: 1rem;
-  }
-  form .input-container .search:focus {
-    width: 400px;
-  }
 }

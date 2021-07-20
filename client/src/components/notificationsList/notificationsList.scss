@@ -1,0 +1,48 @@
+@import "../../styles/variables";
+
+.notificationsList {
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $darkColor;
+    border-radius: 100px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $secondaryColor;
+    min-height: 40px;
+    border-radius: 3px;
+  }
+  overflow: scroll;
+  overflow-x: hidden;
+  border-radius: $smallBorderRaduis;
+  height: 100%;
+  color: $darkColor;
+  .no-notifications {
+    display: flex;
+    justify-content: center;
+    height: inherit;
+    align-items: center;
+    font-size: 1.2em;
+
+    background-color: #fff;
+  }
+  .announce {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .deleteAll {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

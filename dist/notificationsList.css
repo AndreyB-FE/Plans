@@ -1,0 +1,50 @@
+.notificationsList {
+  overflow: scroll;
+  overflow-x: hidden;
+  border-radius: 5px;
+  height: 100%;
+  color: #424242;
+}
+
+.notificationsList::-webkit-scrollbar {
+  width: 6px;
+}
+
+.notificationsList::-webkit-scrollbar-track {
+  background-color: #424242;
+  border-radius: 100px;
+}
+
+.notificationsList::-webkit-scrollbar-thumb {
+  background-color: #e78300;
+  min-height: 40px;
+  border-radius: 3px;
+}
+
+.notificationsList .no-notifications {
+  display: flex;
+  justify-content: center;
+  height: inherit;
+  align-items: center;
+  font-size: 1.2em;
+  background-color: #fff;
+}
+
+.notificationsList .announce {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.notificationsList .deleteAll {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.notificationsList .deleteAll:hover {
+  text-decoration: underline;
+}

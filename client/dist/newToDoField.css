@@ -4,14 +4,14 @@
   flex-direction: column;
   justify-content: space-between;
   top: 3rem;
-  right: 3rem;
-  width: calc(100vw - 3rem);
+  right: 10rem;
+  width: 30%;
   height: 10rem;
+  min-width: 400px;
+  padding: 0.5rem;
   background-color: #c8d4fd;
   border-radius: 10px;
   transition: 0.5s ease-out;
-  padding: 0.5rem;
-  border: 1px solid gray;
 }
 
 .newToDoField .text-notification {
@@ -123,12 +123,4 @@
 .hide {
   top: -10rem;
   opacity: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .newToDoField {
-    right: 10rem;
-    width: 40%;
-    min-width: 400px;
-  }
 }

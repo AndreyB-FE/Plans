@@ -1,12 +1,11 @@
-.viewCalendar {
+.addToDo {
   width: 2rem;
   height: 2rem;
   border-radius: 3px;
   cursor: pointer;
-  margin: 0.5rem 0;
 }
 
-.viewCalendar .calendarIcon {
+.addToDo .plusIcon {
   width: 2rem;
   text-align: center;
   font-size: 1.3rem;
@@ -14,12 +13,6 @@
   color: #424242;
 }
 
-.viewCalendar:hover {
+.addToDo:hover {
   background-color: rgba(255, 255, 255, 0.5);
-}
-
-@media screen and (min-width: 768px) {
-  .viewCalendar {
-    margin: 0 0 0 1rem;
-  }
 }
