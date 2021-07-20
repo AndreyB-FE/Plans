@@ -3,7 +3,8 @@
 .notificationsBar {
   @include headerPopUps;
   justify-content: center;
-  height: 10rem;
+  height: 14rem;
+  padding: 2.5rem 0.5rem;
 }
 
 .hide {

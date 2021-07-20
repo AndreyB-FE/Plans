@@ -22,7 +22,7 @@ const notificationsList = () => {
     return body;
   };
 
-  const deleteNotifications = async (id) => {
+  const deleteOneNotification = async (id) => {
     const response = await fetch(`/api/notifications/${id}`, {
       method: "DELETE",
     });
@@ -30,6 +30,18 @@ const notificationsList = () => {
     else {
       setNotifications(notifications.filter((item) => item.id !== id));
       dispatch(deleteNotification());
+    }
+    return response;
+  };
+
+  const deleteNotifications = async () => {
+    const response = await fetch("/api/notifications", {
+      method: "DELETE",
+    });
+    if (response.status !== 200) throw Error(response.message);
+    else {
+      setNotifications([]);
+      dispatch(deleteAllNotifications());
     }
     return response;
   };
@@ -58,13 +70,18 @@ const notificationsList = () => {
             <Notification
               key={notification.id}
               {...notification}
-              onDelete={() => deleteNotifications(notification.id)}
+              onDelete={() => deleteOneNotification(notification.id)}
             ></Notification>
           );
         })
       ) : (
         <div className="no-notifications">You don't have any notifications</div>
       )}
+      {notifications.length ? (
+        <div className="deleteAll" onClick={() => deleteNotifications()}>
+          Delete all notifications
+        </div>
+      ) : null}
     </div>
   );
 };

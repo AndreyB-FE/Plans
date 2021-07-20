@@ -3,10 +3,10 @@
   overflow-x: hidden;
   border-radius: 5px;
   height: 100%;
+  color: #424242;
 }
 
 .notificationsList::-webkit-scrollbar {
-  position: absolute;
   width: 6px;
 }
 
@@ -27,11 +27,24 @@
   height: inherit;
   align-items: center;
   font-size: 1.2em;
-  color: #424242;
   background-color: #fff;
 }
 
 .notificationsList .announce {
-  text-align: center;
-  margin-bottom: 0.5rem;
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.notificationsList .deleteAll {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.notificationsList .deleteAll:hover {
+  text-decoration: underline;
 }
