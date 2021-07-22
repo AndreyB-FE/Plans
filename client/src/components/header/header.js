@@ -5,6 +5,7 @@ import BurgerButton from "../burgerButton/burgerButton";
 import SearchField from "../searchField/searchField";
 import HeaderControls from "../headerControls/headerControls";
 import OpenControls from "../openControls/openControls";
+import AccountIcon from "../accountIcon/accountIcon";
 
 const header = () => {
   return (
